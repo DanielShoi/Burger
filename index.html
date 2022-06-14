@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div id="container">
+        <header><h1>Select a burger to make changes</h1></header>
+        <aside>
+            <div class="flex-center">
+                <h2 class="toppings"> TOPPINGS</h2>
+                <div class="button1"><button class="button" onclick="add('tomatoes')">+</button> Tomatoes <button class="button" onclick="remove('tomatoes')">-</button></div><br>
+                <div class="button2"><button class="button" onclick="add('onions')">+</button> Onions <button class="button" onclick="remove('onions')">-</button></div><br>
+                <div class="button3"><button class="button" onclick="add('lettuces')">+</button> Lettuce <button class="button" onclick="remove('lettuces')">-</button>
+                </div>
+                
+            </div>
+        </aside>
+        <main class="flex-container">
+            <div id="burger" class="flex-center choose1" onclick="whichBurger(true)">
+                <h2 id="price1">PRICE = $3</h2>
+                <div id="bun-top"></div>
+                <div id="tomatoes"></div>
+                <div id="onions"></div>
+                <div id="lettuces"></div>
+                <div id="pickles"></div>
+                <div class="patty"></div>
+                <div id="bun-buttom"></div>
+            </div>
+            <div id="burger2" class="flex-center choose2" onclick="whichBurger(false)">
+                <h2 id="price2">PRICE = $3</h2>
+                <div id="bun-top"></div>
+                <div id="tomatoesi"></div>
+                <div id="onionsi"></div>
+                <div id="lettucesi"></div>
+                <div id="pickles2"></div>
+                <div class="patty"></div>
+                <div id="bun-buttom"></div>
+            </div>
+        </main>
+        <footer></footer>
+
+    </div>
+    <script src="burger.js"></script>
+</body>
+
+</html>
